@@ -1,0 +1,40 @@
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    tty: true
+    stdin_open: true
+    container_name: minecraft-forge-local
+
+    ports:
+      - "25565:25565"
+
+    environment:
+      EULA: "TRUE"
+      TYPE: "NEOFORGE"
+      NEOFORGE_VERSION: "21.1.211"
+      MOTD: "Bienvenido al servidor del Software!!"
+      VERSION: "1.21.1"
+      MEMORY: "4G"
+      ALLOW_FLIGHT: "TRUE"
+      MAX_TICK_TIME: "-1"
+      DIFFICULTY: "hard"
+      MODE: "survival"
+      ONLINE_MODE: "FALSE"
+      ENABLE_COMMAND_BLOCK: "TRUE"
+      SPAWN_PROTECTION: "0"
+      PVP: "TRUE"
+      SERVER_NAME: "Servidor de Software"
+
+    volumes:
+      - ./minecraft-data:/data
+
+      # Esto NO cambia. Aquí es donde "cargas" tu server pack.
+      - ./server_pack/mods:/data/mods
+      - ./server_pack/config:/data/config
+      # Si tu pack tiene más carpetas, añádelas aquí:
+      # - ./mi_modpack/scripts:/data/scripts
+
+    restart: unless-stopped
+
+volumes:
+  minecraft-data: {}
