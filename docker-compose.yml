@@ -14,7 +14,7 @@ services:
       NEOFORGE_VERSION: "21.1.211"
       MOTD: "Bienvenido al servidor del Software!!"
       VERSION: "1.21.1"
-      MEMORY: "4G"
+      MEMORY: "6G"
       ALLOW_FLIGHT: "TRUE"
       MAX_TICK_TIME: "-1"
       DIFFICULTY: "hard"
@@ -24,17 +24,17 @@ services:
       SPAWN_PROTECTION: "0"
       PVP: "TRUE"
       SERVER_NAME: "Servidor de Software"
+      LEVEL_TYPE: "minecraft:large_biomes"
 
     volumes:
       - ./minecraft-data:/data
 
-      # Esto NO cambia. Aquí es donde "cargas" tu server pack.
       - ./server_pack/mods:/data/mods
       - ./server_pack/config:/data/config
       # Si tu pack tiene más carpetas, añádelas aquí:
       # - ./mi_modpack/scripts:/data/scripts
 
-    restart: unless-stopped
+    restart: "no"
 
 volumes:
   minecraft-data: {}
