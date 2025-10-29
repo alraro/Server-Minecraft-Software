@@ -34,7 +34,7 @@ services:
       # Si tu pack tiene más carpetas, añádelas aquí:
       # - ./mi_modpack/scripts:/data/scripts
 
-    restart: "no"
+    restart: "unless-stopped"
 
 volumes:
   minecraft-data: {}
