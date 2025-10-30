@@ -1,6 +1,6 @@
 services:
   minecraft:
-    image: itzg/minecraft-server
+    image: alraro/software-modpack-fauna:v1.0
     tty: true
     stdin_open: true
     container_name: minecraft-forge-local
@@ -27,12 +27,7 @@ services:
       LEVEL_TYPE: "minecraft:large_biomes"
 
     volumes:
-      - ./minecraft-data:/data
-
-      - ./server_pack/mods:/data/mods
-      - ./server_pack/config:/data/config
-      # Si tu pack tiene más carpetas, añádelas aquí:
-      # - ./mi_modpack/scripts:/data/scripts
+      - minecraft-data:/data
 
     restart: "unless-stopped"
 
