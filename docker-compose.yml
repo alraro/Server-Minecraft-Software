@@ -3,7 +3,7 @@ services:
     image: alraro/software-modpack-fauna:v1.0
     tty: true
     stdin_open: true
-    container_name: minecraft-forge-local
+    container_name: server-software-fauna
 
     ports:
       - "25565:25565"
