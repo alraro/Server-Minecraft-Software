@@ -1,6 +1,6 @@
 services:
   minecraft:
-    image: alraro/software-modpack-fauna:v1.0
+    image: alraro/software-modpack-fauna:1.0.1
     tty: true
     stdin_open: true
     container_name: server-software-fauna
@@ -29,7 +29,7 @@ services:
     volumes:
       - minecraft-data:/data
 
-    restart: "unless-stopped"
+    restart: "on-failure"
 
 volumes:
   minecraft-data: {}
