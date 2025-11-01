@@ -1,6 +1,6 @@
 services:
   minecraft:
-    image: alraro/software-modpack-fauna:1.2.0
+    image: alraro/software-modpack-fauna:1.1.0
     tty: true
     stdin_open: true
     container_name: server-software-fauna
@@ -27,27 +27,7 @@ services:
       LEVEL_TYPE: "minecraft:large_biomes"
 
     volumes:
-      - ./minecraft-data/.cache:/data/.cache
-      - ./minecraft-data/libraries:/data/libraries
-      - ./minecraft-data/config:/data/config
-      - ./minecraft-data/defaultconfigs:/data/defaultconfigs
-      - ./minecraft-data/worlds:/data/worlds
-      - ./minecraft-data/logs:/data/logs
-      - ./minecraft-data/.neoforge-manifest.json:/data/.neoforge-manifest.json
-      - ./minecraft-data/.rcon-cli.env:/data/.rcon-cli.env
-      - ./minecraft-data/.rcon-cli.yaml:/data/.rcon-cli.yaml
-      - ./minecraft-data/.run-neoforge.env:/data/.run-neoforge.env
-      - ./minecraft-data/banned-ips.json:/data/banned-ips.json
-      - ./minecraft-data/banned-players.json:/data/banned-players.json
-      - ./minecraft-data/eula.txt:/data/eula.txt
-      - ./minecraft-data/ops.json:/data/ops.json
-      - ./minecraft-data/run.bat:/data/run.bat
-      - ./minecraft-data/run.sh:/data/run.sh
-      - ./minecraft-data/server.properties:/data/server.properties
-      - ./minecraft-data/user_jvm_args.txt:/data/user_jvm_args.txt
-      - ./minecraft-data/usercache.json:/data/usercache.json
-      - ./minecraft-data/whitelist.json:/data/whitelist.json
-      - ./minecraft-data/server-icon.png:/data/server-icon.png
+      - ./minecraft-data:/data
 
     restart: "on-failure"
 
