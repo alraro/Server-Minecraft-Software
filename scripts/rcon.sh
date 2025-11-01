@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo docker exec -it server-software-fauna rcon-cli
+sudo docker exec -it server-software-fauna rcon-cli $@
