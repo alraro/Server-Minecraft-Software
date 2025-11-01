@@ -12,7 +12,7 @@ services:
       EULA: "TRUE"
       TYPE: "NEOFORGE"
       NEOFORGE_VERSION: "21.1.211"
-      MOTD: "Bienvenido al servidor del Software!!"
+      MOTD: "    \u00A7a\u00A7l¡Server del Software! \u00A7f- \u00A7c[NeoForge 1.21.1]\u00A7r\n          \u00A76\u00A7kaaaa\u00A76 » \u00A7e\u00A7lFauna & Orchestra \u00A76« \u00A76\u00A7kaaaa"
       VERSION: "1.21.1"
       MEMORY: "16G"
       ALLOW_FLIGHT: "TRUE"
