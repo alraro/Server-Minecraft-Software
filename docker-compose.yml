@@ -3,7 +3,7 @@ networks:
 
 services:
   minecraft:
-    image: alraro/software-modpack-fauna:1.1.0
+    image: alraro/software-modpack-fauna:1.2.0
     tty: true
     stdin_open: true
     container_name: server-software-fauna
