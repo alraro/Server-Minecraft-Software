@@ -1,3 +1,6 @@
+networks:
+  minecraft-net:
+
 services:
   minecraft:
     image: alraro/software-modpack-fauna:1.1.0
@@ -14,7 +17,7 @@ services:
       NEOFORGE_VERSION: "21.1.211"
       MOTD: "Bienvenido al servidor del Software!!"
       VERSION: "1.21.1"
-      MEMORY: "16G"
+      MEMORY: "6G"
       ALLOW_FLIGHT: "TRUE"
       MAX_TICK_TIME: "-1"
       DIFFICULTY: "hard"
@@ -26,10 +29,77 @@ services:
       SERVER_NAME: "Servidor de Software"
       LEVEL_TYPE: "minecraft:large_biomes"
 
+      ENABLE_RCON: "TRUE"
+      RCON_PASSWORD: "n%N7Q7ORm5(H"
+      RCON_PORT: "25575"
+
+    networks:
+      - minecraft-net
+
     volumes:
       - ./minecraft-data:/data
 
     restart: "on-failure"
 
+  minecraft-exporter:
+    image: ghcr.io/dirien/minecraft-exporter
+    container_name: minecraft-exporter
+    restart: "on-failure"
+    networks:
+      - minecraft-net
+    volumes:
+      # Montamos los datos del mundo en MODO SOLO LECTURA
+      - ./minecraft-data:/data:ro
+
+    # Estos son los comandos para configurar el exportador
+    command:
+      # 1. Dónde está el servidor (usamos el nombre del servicio)
+      - "--mc.rcon-address=minecraft:25575"
+
+      # 2. La contraseña de RCON (¡debe coincidir!)
+      - "--mc.rcon-password=n%N7Q7ORm5(H" # <-- ¡¡Cámbialo!!
+
+      # 3. Dónde están los archivos del mundo
+      - "--mc.world=/data/world" # (La imagen itzg guarda el mundo en /data/world)
+
+      # 4. Para que saque las métricas de Forge/NeoForge
+      - "--mc.mod-server-stats=NeoForge"
+
+      # 5. El puerto donde el exportador publica las métricas
+      - "--web.listen-address=:9150"
+
+    depends_on:
+      - minecraft
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    restart: "on-failure"
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus-data:/prometheus
+    networks:
+      - minecraft-net
+    depends_on:
+      - minecraft-exporter
+
+  grafana:
+    image: grafana/grafana-oss:latest
+    container_name: grafana
+    restart: "on-failure"
+    ports:
+      - "3000:3000" # Puerto para acceder a la UI de Grafana
+    volumes:
+      # Un volumen para que tus dashboards y configs sobrevivan
+      - grafana-data:/var/lib/grafana
+    # --- AÑADIR A LA RED ---
+    networks:
+      - minecraft-net
+    depends_on:
+      - prometheus
+
 volumes:
-  minecraft-data: {}
+  prometheus-data:
+  grafana-data:
