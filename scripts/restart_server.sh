@@ -1,3 +1,4 @@
 #!/bin/bash
 
-sudo docker compose restart
+sudo docker compose down
+sudo docker compose up -d
