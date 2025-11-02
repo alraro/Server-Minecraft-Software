@@ -83,7 +83,7 @@ services:
     networks:
       - minecraft-net
     depends_on:
-      - minecraft-exporter
+      - minecraft
 
   grafana:
     image: grafana/grafana-oss:latest
