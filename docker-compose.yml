@@ -17,7 +17,7 @@ services:
       NEOFORGE_VERSION: "21.1.211"
       MOTD: "    \u00A7a\u00A7l¡Server del Software! \u00A7f- \u00A7c[NeoForge 1.21.1]\u00A7r\n          \u00A76\u00A7kaaaa\u00A76 » \u00A7e\u00A7lFauna & Orchestra \u00A76« \u00A76\u00A7kaaaa"
       VERSION: "1.21.1"
-      MEMORY: "6G"
+      MEMORY: "${MC_MEMORY}"
       ALLOW_FLIGHT: "TRUE"
       MAX_TICK_TIME: "-1"
       DIFFICULTY: "hard"
@@ -30,8 +30,8 @@ services:
       LEVEL_TYPE: "minecraft:large_biomes"
 
       ENABLE_RCON: "TRUE"
-      RCON_PASSWORD: "n%N7Q7ORm5(H"
-      RCON_PORT: "25575"
+      RCON_PASSWORD: "${RCON_PASSWORD}"
+      RCON_PORT: "${RCON_PORT}"
 
     networks:
       - minecraft-net
@@ -54,10 +54,10 @@ services:
     # Estos son los comandos para configurar el exportador
     command:
       # 1. Dónde está el servidor (usamos el nombre del servicio)
-      - "--mc.rcon-address=minecraft:25575"
+      - "--mc.rcon-address=minecraft:${RCON_PORT}"
 
       # 2. La contraseña de RCON (¡debe coincidir!)
-      - "--mc.rcon-password=n%N7Q7ORm5(H" # <-- ¡¡Cámbialo!!
+      - "--mc.rcon-password=${RCON_PASSWORD}"
 
       # 3. Dónde están los archivos del mundo
       - "--mc.world=/data/world" # (La imagen itzg guarda el mundo en /data/world)
