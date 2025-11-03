@@ -1,0 +1,13 @@
+name = "TobaccoCraft"
+filename = "tobacco-1.0.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4712242428c5454d5a435677fd04e7af17557be3"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6941803
+project-id = 1272401

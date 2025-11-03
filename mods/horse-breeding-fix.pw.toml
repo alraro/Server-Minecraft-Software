@@ -1,0 +1,13 @@
+name = "Horse Breeding Fix"
+filename = "horse-breeding-fix-neoforge-1.21.x-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b89dcdd2251ae06e7a95c16057086e63b7e3b09f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6603463
+project-id = 1275745

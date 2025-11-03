@@ -1,0 +1,13 @@
+name = "Repurposed Structures - Friends and Foes Compat Mod"
+filename = "repurposed_structures_friends_and_foes_compat_v9.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e0ffcff358d73ba3965a9d511e9e145022c5445d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6794578
+project-id = 964346

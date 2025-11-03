@@ -1,0 +1,13 @@
+name = "Too Fast"
+filename = "toofast-0.7.5.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "39b9945b317fb302d2cbe2b69e803a5044539c25"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6719212
+project-id = 550678

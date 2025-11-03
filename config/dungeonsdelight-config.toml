@@ -1,0 +1,12 @@
+	["Dungeon's Delight Config"."Balance Configuration"]
+		#Configuration for features that may impact gameplay in a large way
+		#Should Farmer's Delight stick foods grant strength? (default: true)
+		fdStickFoodsGrantStrength = true
+		#Should Farmer's Delight glowing foods grant perception? (default: true)
+		fdGlowingFoodsGrantPerception = true
+		#Force enable all mod integration? (even if the corresponding mods are not installed), mostly useful for modpacks wanting to repurpose the items (default: false)
+		forceEnableIntegrationFeatures = false
+		#Should trial spawner blocks emit green flame particles? (default: true)
+		trialSpawnersEmitGreenFlames = true
+		#Should vault blocks emit green flame particles? (default: true)
+		vaultsEmitGreenFlames = true

@@ -1,0 +1,13 @@
+name = "Random Enchant Fix"
+filename = "randomenchantfix-neoforge-1.0.1-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "78e44a418601c4c9d8c742501e73ba32499c2185"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6827003
+project-id = 1209864

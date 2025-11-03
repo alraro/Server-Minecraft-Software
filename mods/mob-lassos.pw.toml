@@ -1,0 +1,13 @@
+name = "Mob Lassos"
+filename = "MobLassos-v21.1.1-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "564fabd8875c25eaa7b91c79bfa647ca7757d6f9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7021571
+project-id = 852670

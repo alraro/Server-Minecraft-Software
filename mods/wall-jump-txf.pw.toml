@@ -1,0 +1,13 @@
+name = "Wall-Jump TXF"
+filename = "walljump-1.21.1-1.3.5-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "944241dafbf6042bfd7ba0ef468832499b411a00"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6584352
+project-id = 909143

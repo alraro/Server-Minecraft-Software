@@ -1,0 +1,13 @@
+name = "Healing Campfire"
+filename = "healingcampfire-1.21.1-6.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b87bbab52ac97738651229a263f2339a8923ae47"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6185736
+project-id = 342623

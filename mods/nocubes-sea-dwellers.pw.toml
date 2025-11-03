@@ -1,0 +1,13 @@
+name = "Realm RPG: Sea Dwellers"
+filename = "seadwellers-1.0.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e1459fe7e4c40d20587b3fb3d27ebb3f5dfef7f5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6826262
+project-id = 536530

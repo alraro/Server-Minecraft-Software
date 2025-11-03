@@ -1,0 +1,13 @@
+name = "Variants&Ventures"
+filename = "variantsandventures-neoforge-1.0.18+mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ff48578de165244d6f074995cbe626e83a9b1acb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7001971
+project-id = 981139

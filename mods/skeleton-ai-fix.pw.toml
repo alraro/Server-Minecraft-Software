@@ -1,0 +1,13 @@
+name = "Skeleton AI Fix"
+filename = "SkeletonAIFix-v21.1.1-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1f4695061a2134a6361dcab03ec76c7a0a6428e2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6740123
+project-id = 319351

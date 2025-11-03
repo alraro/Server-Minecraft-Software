@@ -1,0 +1,13 @@
+name = "Damage Tilt Fixes"
+filename = "damagetiltfixes1.21.1+1.0-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "98be707b4b1bc49a584dfc072485bf4269ab371d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6776389
+project-id = 1307700

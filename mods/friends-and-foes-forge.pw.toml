@@ -1,0 +1,13 @@
+name = "Friends&Foes (Forge/NeoForge) (Copper Golem,Crab,Glare,Moobloom,Iceologer,Rascal,Tuff Golem,Wildfire,Illusioner,Zombie Horse)"
+filename = "friendsandfoes-neoforge-4.0.13+mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c541cae31ff92c6b43366d0abefd2ade43d7b586"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7116526
+project-id = 602059
