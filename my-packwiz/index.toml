@@ -2681,68 +2681,8 @@ file = "config/yungsmenutweaks-neoforge-1_21.toml"
 hash = "f03258dd68fab838e12affe9c56d7a558a808f0803458b657b77acdc84fd4915"
 
 [[files]]
-file = "mods/BadOptimizations-2.3.1-1.21.1.jar.disabled"
-hash = "ab4441d6c20a3ddbf9c7647d52ec4fce18bfc0be1bf8c6da371c89626d1870ba"
-
-[[files]]
-file = "mods/BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar.disabled"
-hash = "60b548bef04a2f0e1da686ee9035c2e3d4ed0459a17d7a4836fc26af6de6b60e"
-
-[[files]]
-file = "mods/BetterGrassify-1.7.0+neoforge.1.21.1.jar.disabled"
-hash = "2424e74f09e01fdca1d0eb8b5933bc55c8ee4d769b8afd2fca900a0b33ec8f7d"
-
-[[files]]
-file = "mods/BetterModsButton-v21.1.0-1.21.1-NeoForge.jar.disabled"
-hash = "e7360a9a94e85d9173b93cf672192ccecec71b4ee3145a79bb71cfe37f2cbfb5"
-
-[[files]]
-file = "mods/Controlling-neoforge-1.21.1-19.0.5.jar.disabled"
-hash = "cc525fb6b030d9e4d33176983f278919e17b33935e2ca568929bdfa98f2b44a0"
-
-[[files]]
-file = "mods/DeleteWorldsToTrash-v21.1.0-1.21.1-NeoForge.jar.disabled"
-hash = "4f1cec74c509f6fb2146797fa6300a297d6796674499883157927c67a4e6e550"
-
-[[files]]
-file = "mods/EuphoriaPatcher-1.7.3-r5.6.1-neoforge.jar.disabled"
-hash = "2e6632afa744071f6a2c36e7bea02911e4e6f54d43163f5f9e767bd002ba0264"
-
-[[files]]
-file = "mods/ImmediatelyFast-NeoForge-1.6.7+1.21.1.jar.disabled"
-hash = "1998d56edb0ddb6caeedd09dd2fde405ee85cd8f706398cb8e08009fe9019058"
-
-[[files]]
-file = "mods/JustEnoughProfessions-neoforge-1.21.1-4.0.4.jar.disabled"
-hash = "42ff35ec355edc1a1ebafeb26a9e351c5bb8abd7bd73c343b00aaca19200615b"
-
-[[files]]
-file = "mods/LeaveMyBarsAlone-v21.1.2-1.21.1-NeoForge.jar.disabled"
-hash = "77585e47cb30c13b8c6766c0d9ab43c77d16a2f63cea6fb44882dc310876131a"
-
-[[files]]
-file = "mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar.disabled"
-hash = "68e6f4201c5de97b77929a7215c9552495696ca6a3bf3ae4eacc34e135f6cc8b"
-
-[[files]]
-file = "mods/OverflowingBars-v21.1.1-1.21.1-NeoForge.jar.disabled"
-hash = "5f856c47156915fd13ff42917401e488212bb5e2df25fde41f6ec1b032e383db"
-
-[[files]]
-file = "mods/PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar.disabled"
-hash = "b49535698de9c7b5a879c8ec99175771d87d5261d5cc4c6152ba1fa51fc5676a"
-
-[[files]]
-file = "mods/SimpleDiscordRichPresence-neoforge-87.0.1-build.49+mc1.21.jar.disabled"
-hash = "b9fbc6a962000022ebf2c8fb6fe7a966c771431b7e2ec9432c11d692e852a2be"
-
-[[files]]
-file = "mods/XaeroPlus-2.28.8+neoforge-1.21.1-WM1.39.12-MM25.2.10.jar.disabled"
-hash = "5125483dfed74715525d3a1b5c54c06249afdcbd2e6a8522582e4f619a322482"
-
-[[files]]
-file = "mods/YungsMenuTweaks-1.21.1-NeoForge-2.1.2.jar.disabled"
-hash = "a6487691e22cb3405256453d2496ee74aae824ae865b0ec57654380686993a53"
+file = "mods/Prometheus-Exporter-1.21.1-neoforge-1.2.1.jar"
+hash = "3853ddbfeb3e9ce069c8473eb799f6160c0fb63f1efa4e99e55533dbc45ceff6"
 
 [[files]]
 file = "mods/abridged.pw.toml"
@@ -2910,10 +2850,6 @@ hash = "ba6300f8b73556615470c389c84dd3a594ffc9d435ffdbfa4288351f27017139"
 metafile = true
 
 [[files]]
-file = "mods/betterbiomeblend-1.5.2.jar.disabled"
-hash = "5f632bf837b9b3c28eeaa4182fef6b24634a492e793ca98e7ba1ec0ffbb11083"
-
-[[files]]
 file = "mods/biome-music.pw.toml"
 hash = "d7d497a6c1f81a4f6660f5e17cba8a8a31313479c0b08e964d19e8f71729ad37"
 metafile = true
@@ -2969,10 +2905,6 @@ hash = "c702a841526b4f214559f0d7f6550c11683423ca1e95df49d4e92582bec8d8a1"
 metafile = true
 
 [[files]]
-file = "mods/cc-tweaked-1.21.1-forge-1.116.1.jar"
-hash = "f5e8872a2ccca38aa210c477c84d5f2ba3e8f054328b6816461af4c1f8c460a5"
-
-[[files]]
 file = "mods/cc-tweaked.pw.toml"
 hash = "667344dcc91381c11ea871326f828a72e3386dfc450b7e08ca1ea409f66cc2d3"
 metafile = true
@@ -2991,14 +2923,6 @@ metafile = true
 file = "mods/chalk.pw.toml"
 hash = "cd8af7e252a28e82de8a5650696cec221b7b30fd2602f1e31c20ef4a469e3012"
 metafile = true
-
-[[files]]
-file = "mods/chat_heads-0.14.0-neoforge-1.21.jar.disabled"
-hash = "246a92b608cac6b354caa21f85b8983eaba2dfa76cdedde17185e6d569cee457"
-
-[[files]]
-file = "mods/cherishedworlds-neoforge-10.1.1+1.21.1.jar.disabled"
-hash = "73a352263e4d21dc4eaa9d52b31f949b896c507aec373e4218b0942fff8f73a3"
 
 [[files]]
 file = "mods/chipped.pw.toml"
@@ -3220,10 +3144,6 @@ hash = "70badf39e96140d99e37b03dd65b999e19106f24e10352758e5d043668500cd5"
 metafile = true
 
 [[files]]
-file = "mods/distraction_free_recipes-neoforge-1.2.1-1.21.1.jar.disabled"
-hash = "006bd026ce6a89df1a111868c6cae57ff02ae2ed8362abb99f8d371413571f40"
-
-[[files]]
 file = "mods/dnt-ancient-city-overhaul.pw.toml"
 hash = "58096a477ce5489d4c283d910b0e8b285c6fea7ed8dd9010136f6af9464cc6e9"
 metafile = true
@@ -3252,10 +3172,6 @@ metafile = true
 file = "mods/double-doors.pw.toml"
 hash = "024113276649fed257cd98d2e3ac71c0dd08d84cef05a043b9b9ac23a8792423"
 metafile = true
-
-[[files]]
-file = "mods/drippyloadingscreen_neoforge_3.0.12_MC_1.21.1.jar.disabled"
-hash = "a0d941bda35becbfbeaef02590cc2dd64228fa497a302292156192c2ee1e5c1e"
 
 [[files]]
 file = "mods/dungeon-and-taverns.pw.toml"
@@ -3313,18 +3229,6 @@ hash = "39cbab92fb61fa1809540a828858e16c2386ff6fbd5bc01140d180c74ad94002"
 metafile = true
 
 [[files]]
-file = "mods/entity_model_features_1.21-neoforge-3.0.1.jar.disabled"
-hash = "d44d7542a4e0aec561bfd6528b90f382e6847ce8019fe0df6cfeda782f2e1f7f"
-
-[[files]]
-file = "mods/entity_texture_features_1.21-neoforge-7.0.2.jar.disabled"
-hash = "73923a8262919df8a684b841187efd4c3d85c748bc2519d3aca5d554307cbc45"
-
-[[files]]
-file = "mods/entityculling-neoforge-1.9.2-mc1.21.1.jar.disabled"
-hash = "d95ba03575465ac9780408bd68e3ae3a347550697d5d863fbffefc9c19b995c0"
-
-[[files]]
 file = "mods/epherolib.pw.toml"
 hash = "bb3972a97a3915f202ce571fc7b943b2055119a0d70404424505e4dbc811958c"
 metafile = true
@@ -3360,10 +3264,6 @@ hash = "5fe387bcad2d72c9bdd7047c19fed3959dcc65e2615e188ae743c517c08209df"
 metafile = true
 
 [[files]]
-file = "mods/fancymenu_neoforge_3.7.0_MC_1.21.1.jar.disabled"
-hash = "3c6cce7ef18254c13e2e061cb882160c9d00f91b09bb589423baccc4f4366462"
-
-[[files]]
 file = "mods/farmers-cutting-oh-the-biomes-weve-gone.pw.toml"
 hash = "44030876800c6a4cb0be4f78a906db0c230dea8f60007afbbd67262f194e0751"
 metafile = true
@@ -3379,17 +3279,9 @@ hash = "3cab074cc8b5d1b444f1d50845531180b850bb401be9b9c2081a050e288450f1"
 metafile = true
 
 [[files]]
-file = "mods/farsight-1.21.1-4.5.jar.disabled"
-hash = "1fd4967c959a6177bbd1ea25a74436a55ad594d5f95c89f3479ca517b7ed8bc3"
-
-[[files]]
 file = "mods/fast-async-world-save-forge-fabric.pw.toml"
 hash = "c19754832997fe5fbd9488eeb3b02f3221f36893f94003e403b731ed9e9132ce"
 metafile = true
-
-[[files]]
-file = "mods/fast-ip-ping-v1.0.7-mc1.21.1-neoforge.jar.disabled"
-hash = "fd3697cad87530af12b115a89eee8b2dbdf8a5146df93a1e4cd527ffeb3d2344"
 
 [[files]]
 file = "mods/fast-item-frames.pw.toml"
@@ -3522,10 +3414,6 @@ hash = "13e5e67f38f0045957f01c7bdfefe465c9bd11f8b8e8982a9b45adc24ad04904"
 metafile = true
 
 [[files]]
-file = "mods/gpumemleakfix-1.21-1.8.jar.disabled"
-hash = "4bd0682e26b8d4ba78442ce8d969fc7fa3cac2c21fc600de34a54b2ff7814931"
-
-[[files]]
 file = "mods/handcrafted.pw.toml"
 hash = "d573695d37296209dc06495d359c4b283ffa6640bcfe8aa9c9b59eb420891788"
 metafile = true
@@ -3554,10 +3442,6 @@ metafile = true
 file = "mods/horse-breeding-fix.pw.toml"
 hash = "e17655ee85595670dd5b2e300a32e5284e07b5b1b4aa2a4514d797a8c3d96937"
 metafile = true
-
-[[files]]
-file = "mods/hrtffix-neoforge-1.0.0.jar.disabled"
-hash = "b28345073c1434d8a59cffe1da3f5d2736a7c3d77a474d590d13bad44a713dcd"
 
 [[files]]
 file = "mods/iceberg.pw.toml"
@@ -3653,10 +3537,6 @@ metafile = true
 file = "mods/justenoughbreeding.pw.toml"
 hash = "480364ee4530bebdb3c4538dd30458e084a061bc3c4b42fb23a2ed3de2e16302"
 metafile = true
-
-[[files]]
-file = "mods/justzoom_neoforge_2.1.0_MC_1.21.1.jar.disabled"
-hash = "83f1701f7802d4355e57f73c2751b29e4b760a4e2a18427504bbd9ce7090a0c1"
 
 [[files]]
 file = "mods/kiwi.pw.toml"
@@ -3994,10 +3874,6 @@ hash = "26aca541ff9f149ef8bfdf69efb258d23339affd9fba4612bddd01e759fb0ffd"
 metafile = true
 
 [[files]]
-file = "mods/no-report-button-neoforge-1.6.1.jar.disabled"
-hash = "9f5422d93143ecd37b7e2efae9f81cec690cdf15201cc40d83e612d0ae0a5e2b"
-
-[[files]]
 file = "mods/nocubes-sea-dwellers.pw.toml"
 hash = "29ae2209514ad654fd34ea2be1bfe00d6d8c2590db83b3146e94789f1abca2f1"
 metafile = true
@@ -4006,10 +3882,6 @@ metafile = true
 file = "mods/noisium.pw.toml"
 hash = "c39f473bc613a79aaf8717ced14f9e081451118cd53521ac5d6e6cdd469a3f59"
 metafile = true
-
-[[files]]
-file = "mods/notenoughanimations-neoforge-1.10.5-mc1.21.1.jar.disabled"
-hash = "b9059d7ec801817a25934a3b767536efe5a23a4dbb45301e77de64a93c3c6b36"
 
 [[files]]
 file = "mods/oceans-delight.pw.toml"
@@ -4050,10 +3922,6 @@ metafile = true
 file = "mods/packet-fixer.pw.toml"
 hash = "2fe074d31064ee3cf0ab6b1bccdf344161179e2aaf06727c8c42d3cc0160c2e9"
 metafile = true
-
-[[files]]
-file = "mods/particle_core-0.2.6+1.21+neoforge.jar.disabled"
-hash = "15a8b462016414e0ed1650e7a6ed21997e32b07e1aa824f07a4a9073fd2b9302"
 
 [[files]]
 file = "mods/patchouli.pw.toml"
@@ -4311,30 +4179,6 @@ hash = "f0921e672c9519eff90da52406b64f84661604f067fc7bd3361f1906b2788344"
 metafile = true
 
 [[files]]
-file = "mods/sodium-neoforge-0.6.13+mc1.21.1.jar.disabled"
-hash = "7acd7af2ef75ec883a6872c17494ead65e38025151eb08a1d60e36d34377f403"
-
-[[files]]
-file = "mods/sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar.disabled"
-hash = "d78002d50865db928fbf2c17c716ffcbbd6d33bff88aa1f0f3a04152a2665e25"
-
-[[files]]
-file = "mods/sodiumextras-neoforge-1.0.8-1.21.1.jar.disabled"
-hash = "2f9d6ab7f3d968b985f30c083b136466b84d54f4cc9d5f05394c39615aae2f8f"
-
-[[files]]
-file = "mods/sodiumleafculling-neoforge-1.0.1-1.21.1.jar.disabled"
-hash = "39c48261ae34a26fcfbf0b64303a5afcc205cb40bb70b88941fced268f600e12"
-
-[[files]]
-file = "mods/sodiumoptionsapi-neoforge-1.0.10-1.21.1.jar.disabled"
-hash = "a6b9114615e2fff97e1a99fbf9fae17b87baacb26b69dde2f423867b5932bc02"
-
-[[files]]
-file = "mods/sodiumoptionsmodcompat-neoforge-1.0.0-1.21.1.jar.disabled"
-hash = "a4eda890c1793d2e414babff209a3ac45a5046095f584a81f82e4ecf9c78ae03"
-
-[[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
 hash = "1cbd52b71cc29b7898cab67367e4a8885cf7e6dcd202521e0884f9025eaab09d"
 metafile = true
@@ -4358,6 +4202,10 @@ metafile = true
 file = "mods/sound-physics-remastered.pw.toml"
 hash = "b9d4d42709629f2d52cb9d33bedf298bbea635b53f69946f9ec2735c47dfbd83"
 metafile = true
+
+[[files]]
+file = "mods/spark-1.10.124-neoforge.jar"
+hash = "647e8a81afbe414dba1df4ba15fd06c5d32d4cb544e68828405e8e074c2e16db"
 
 [[files]]
 file = "mods/sparse-structures.pw.toml"
@@ -4495,10 +4343,6 @@ hash = "e6f77a7e8990c5a7759ad9fb3d524b12ae49b169f544a0a5f19984851122b134"
 metafile = true
 
 [[files]]
-file = "mods/vanillin-neoforge-1.21.1-1.1.3.jar.disabled"
-hash = "4ea3fa9e7c33abaf9dc135e88b4c07992c6e8f03d61c828b2c6cdfa6be32957c"
-
-[[files]]
 file = "mods/variants-and-ventures.pw.toml"
 hash = "665a274fe12c8c295bb6d7e781b7ae7ba3dfcd23e30705461b8cdf7d3f97932f"
 metafile = true
@@ -4537,10 +4381,6 @@ metafile = true
 file = "mods/waterframes.pw.toml"
 hash = "c5cfc15522e92bb9a5fc3e56f38b72a935f65298236df10fbbc1aec2fd7a5203"
 metafile = true
-
-[[files]]
-file = "mods/watermedia-2.1.36.jar.disabled"
-hash = "9f2b54c4d5c9d680ee8a50e0bed1d982d0667d3ee7097765effcae6b2478d690"
 
 [[files]]
 file = "mods/watervision.pw.toml"
@@ -4641,11 +4481,3 @@ metafile = true
 file = "mods/yungs-better-witch-huts-neoforge.pw.toml"
 hash = "537a140266ce5c290490e4712935590ff40deeaa0af68f54fcf56157a82eb953"
 metafile = true
-
-[[files]]
-file = "server_side_mods/Prometheus-Exporter-1.21.1-neoforge-1.2.1.jar"
-hash = "3853ddbfeb3e9ce069c8473eb799f6160c0fb63f1efa4e99e55533dbc45ceff6"
-
-[[files]]
-file = "server_side_mods/spark-1.10.124-neoforge.jar"
-hash = "647e8a81afbe414dba1df4ba15fd06c5d32d4cb544e68828405e8e074c2e16db"
