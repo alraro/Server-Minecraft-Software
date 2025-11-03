@@ -3,7 +3,11 @@ networks:
 
 services:
   minecraft:
+<<<<<<< HEAD
     image: itzg/minecraft-server:java21
+=======
+    image: alraro/software-modpack-fauna:1.2.2
+>>>>>>> ee08422cf803cc0354575844ba4e2f11ef35a2d0
     tty: true
     stdin_open: true
     container_name: server-software-fauna
