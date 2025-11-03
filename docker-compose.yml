@@ -3,7 +3,7 @@ networks:
 
 services:
   minecraft:
-    image: alraro/software-modpack-fauna:1.2.0
+    image: itzg/minecraft-server:java21
     tty: true
     stdin_open: true
     container_name: server-software-fauna
@@ -33,43 +33,16 @@ services:
       RCON_PASSWORD: "${RCON_PASSWORD}"
       RCON_PORT: "${RCON_PORT}"
 
+      PACKWIZ_URL: "https://raw.githubusercontent.com/alraro/Server-Minecraft-Software/refs/heads/develop/my-packwiz/pack.toml"
+
     networks:
       - minecraft-net
 
     volumes:
       - ./minecraft-data:/data
+      - ./my-packwiz:/packwiz:ro
 
-    restart: "on-failure"
-
-  # minecraft-exporter:
-  #   image: ghcr.io/dirien/minecraft-exporter
-  #   container_name: minecraft-exporter
-  #   restart: "on-failure"
-  #   networks:
-  #     - minecraft-net
-  #   volumes:
-  #     # Montamos los datos del mundo en MODO SOLO LECTURA
-  #     - ./minecraft-data:/data:ro
-
-  #   # Estos son los comandos para configurar el exportador
-  #   command:
-  #     # 1. Dónde está el servidor (usamos el nombre del servicio)
-  #     - "--mc.rcon-address=minecraft:${RCON_PORT}"
-
-  #     # 2. La contraseña de RCON (¡debe coincidir!)
-  #     - "--mc.rcon-password=${RCON_PASSWORD}"
-
-  #     # 3. Dónde están los archivos del mundo
-  #     - "--mc.world=/data/world" # (La imagen itzg guarda el mundo en /data/world)
-
-  #     # 4. Para que saque las métricas de Forge/NeoForge
-  #     - "--mc.mod-server-stats=Forge"
-
-  #     # 5. El puerto donde el exportador publica las métricas
-  #     - "--web.listen-address=:9150"
-
-  #   depends_on:
-  #     - minecraft
+    restart: "no"
 
   prometheus:
     image: prom/prometheus:latest

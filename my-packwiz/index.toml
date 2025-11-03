@@ -2700,11 +2700,6 @@ hash = "a15f3ab51e3a138c7ea0ff93513b09d5cda22418ca83a14eb09ab38ca0945c3d"
 metafile = true
 
 [[files]]
-file = "mods/accessorify.pw.toml"
-hash = "933c2a0bc9d17d7480cf30c1ab63a6b0c9a4acc932c67bc46cac69e32edd5ac3"
-metafile = true
-
-[[files]]
 file = "mods/adorabuild-structures.pw.toml"
 hash = "42cfdf60039cb971b6c13d8fa25029cb75aea3af8bc54b873b0d9608877c1084"
 metafile = true
