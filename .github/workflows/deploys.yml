@@ -37,6 +37,6 @@ jobs:
             # 3. Ejecuta tu script
             #    (Asegúrate de que tenga permisos de ejecución: chmod +x tu_script.sh)
             echo "Ejecutando script de reinicio..."
-            restart_server
+            ./scripts/restart_server.sh
             
             echo "¡Proceso completado!"
