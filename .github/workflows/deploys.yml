@@ -1,0 +1,42 @@
+# Nombre del workflow
+name: Deploy to OCI VM (Simple Git Pull)
+
+# Se activa en cada 'push' a la rama 'main'
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  # El trabajo se llama 'deploy'
+  deploy:
+    # Se ejecuta en una máquina virtual de Ubuntu (proporcionada por GitHub)
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Este único paso se conecta por SSH y ejecuta los comandos
+      - name: Update modpack and restart server on OCI VM
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          
+          # Script que se ejecuta EN TU VM DE OCI
+          script: |
+            echo "Conectado a la VM..."
+            
+            # 1. Ve a la carpeta de tu proyecto en la VM
+            #    ¡¡CAMBIA ESTA RUTA!!
+            cd /home/ubuntu/Server-Minecraft-Software
+            
+            # 2. Haz 'git pull' para traer los nuevos cambios de la rama main
+            echo "Haciendo git pull..."
+            git pull origin main
+            
+            # 3. Ejecuta tu script
+            #    (Asegúrate de que tenga permisos de ejecución: chmod +x tu_script.sh)
+            echo "Ejecutando script de reinicio..."
+            restart_server
+            
+            echo "¡Proceso completado!"
