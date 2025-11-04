@@ -29,6 +29,10 @@ jobs:
             # 1. Ve a la carpeta de tu proyecto en la VM
             #    ¡¡CAMBIA ESTA RUTA!!
             cd /home/ubuntu/Server-Minecraft-Software
+
+            ./scripts/stop_server.sh
+
+             sudo rm -r minecraft-data/mods/
             
             # 2. Haz 'git pull' para traer los nuevos cambios de la rama main
             echo "Haciendo git pull..."
@@ -37,6 +41,6 @@ jobs:
             # 3. Ejecuta tu script
             #    (Asegúrate de que tenga permisos de ejecución: chmod +x tu_script.sh)
             echo "Ejecutando script de reinicio..."
-            ./scripts/restart_server.sh
+            ./scripts/start_server.sh
             
             echo "¡Proceso completado!"
