@@ -1,48 +1,75 @@
 # Nombre del workflow
-name: Deploy to OCI VM (Simple Git Pull)
+name: Deploy to OCI VM (Smart)
 
-# Se activa en cada 'push' a la rama 'main'
+# 1. Se activa en CADA 'push' a la rama 'main'
 on:
   push:
     branches:
       - main
-    paths:
-      - "my-packwiz/**"
+    # ¡HEMOS QUITADO el filtro 'paths:' para que siempre se ejecute!
 
 jobs:
-  # El trabajo se llama 'deploy'
   deploy:
-    # Se ejecuta en una máquina virtual de Ubuntu (proporcionada por GitHub)
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Este único paso se conecta por SSH y ejecuta los comandos
-      - name: Update modpack and restart server on OCI VM
+      # Paso 1: Clonar el código EN EL RUNNER DE GITHUB
+      # (Esto es necesario para que el 'Paso 2' pueda ver el historial)
+      - name: 1. Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Necesario para que la acción de abajo pueda ver el historial
+
+      # Paso 2: Detectar si los archivos de 'my-packwiz' cambiaron
+      # (Esto se ejecuta EN EL RUNNER DE GITHUB)
+      - name: 2. Detect changes in modpack
+        id: changed_files_packwiz
+        uses: tj-actions/changed-files@v44
+        with:
+          # La carpeta que nos importa
+          files: my-packwiz/**
+
+      # Paso 3: SCRIPT COMPLETO (si 'my-packwiz' CAMBIÓ)
+      - name: 3. Pull and Restart Server (if packwiz changed)
+        # Este 'if:' comprueba la salida del 'Paso 2'
+        if: steps.changed_files_packwiz.outputs.any_changed == 'true'
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-          # Script que se ejecuta EN TU VM DE OCI
           script: |
-            echo "Conectado a la VM..."
-
-            # 1. Ve a la carpeta de tu proyecto en la VM
-            #    ¡¡CAMBIA ESTA RUTA!!
+            echo "Detectado cambio en 'my-packwiz'. Ejecutando reinicio completo..."
             cd /home/ubuntu/Server-Minecraft-Software
 
-            ./scripts/stop_server.sh
-
-             sudo rm -r minecraft-data/mods/
-
-            # 2. Haz 'git pull' para traer los nuevos cambios de la rama main
             echo "Haciendo git pull..."
             git pull origin main
 
-            # 3. Ejecuta tu script
-            #    (Asegúrate de que tenga permisos de ejecución: chmod +x tu_script.sh)
-            echo "Ejecutando script de reinicio..."
+            echo "Deteniendo servidor..."
+            ./scripts/stop_server.sh
+
+            echo "Borrando mods antiguos..."
+            sudo rm -r minecraft-data/mods/
+
+            echo "Iniciando servidor..."
             ./scripts/start_server.sh
 
-            echo "¡Proceso completado!"
+            echo "¡Proceso de reinicio completado!"
+
+      # Paso 4: SCRIPT SIMPLE (si 'my-packwiz' NO CAMBIÓ)
+      - name: 4. Pull Only (if packwiz did NOT change)
+        # Este 'if:' es la condición opuesta al 'Paso 3'
+        if: steps.changed_files_packwiz.outputs.any_changed == 'false'
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            echo "No se detectaron cambios en 'my-packwiz'. Solo haciendo git pull..."
+            cd /home/ubuntu/Server-Minecraft-Software
+
+            echo "Haciendo git pull..."
+            git pull origin main
+
+            echo "¡Proceso completado! No se necesita reinicio."
