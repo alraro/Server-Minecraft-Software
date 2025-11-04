@@ -43,7 +43,7 @@ services:
       - ./my-packwiz/excluded_mods:/mods
       - ./my-packwiz:/packwiz:ro
 
-    restart: "no"
+    restart: "on-failure"
 
   prometheus:
     image: prom/prometheus:latest
