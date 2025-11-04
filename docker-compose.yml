@@ -74,6 +74,31 @@ services:
     depends_on:
       - prometheus
 
+  loki:
+    image: grafana/loki:latest
+    container_name: loki
+    ports:
+      - "3100:3100" # Puerto para recibir logs
+    volumes:
+      - loki-data:/loki
+    networks:
+      - minecraft-net
+    restart: unless-stopped
+
+  promtail:
+    image: grafana/promtail:latest
+    container_name: promtail
+    volumes:
+      - ./promtail-config.yml:/etc/promtail/config.yml
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      # 3. Los logs de los contenedores
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+    command: -config.file=/etc/promtail/config.yml
+    networks:
+      - minecraft-net
+    restart: unless-stopped
+
 volumes:
   prometheus-data:
   grafana-data:
+  loki-data:
