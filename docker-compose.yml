@@ -28,6 +28,7 @@ services:
       PVP: "TRUE"
       SERVER_NAME: "Servidor de Software"
       LEVEL_TYPE: "minecraft:large_biomes"
+      ICON: "/server-icon/server-icon.png"
 
       ENABLE_RCON: "TRUE"
       RCON_PASSWORD: "${RCON_PASSWORD}"
@@ -42,6 +43,7 @@ services:
       - ./minecraft-data:/data
       - ./my-packwiz/excluded_mods:/mods
       - ./my-packwiz:/packwiz:ro
+      - ./server-icon.png:/server-icon/server-icon.png
 
     restart: "on-failure"
 
