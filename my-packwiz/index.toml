@@ -2729,6 +2729,10 @@ file = "excluded_mods/blended-compat-1.1.2.jar"
 hash = "33d71a2b1ddfa7cffc7c1d5a683b8f73d5e7ef6f665c0937dc1ee97992e81ab9"
 
 [[files]]
+file = "excluded_mods/faunaandorchestra-2.0.2.jar"
+hash = "498c3bbea3c44ca2afcf0cffeb22cf6ea23095231467ea7487c3e09b614d29d7"
+
+[[files]]
 file = "excluded_mods/hexerei-0.5.0.3.jar"
 hash = "743e80cb0526fa5fffdb660c5c3230df47d664fb268e48ca888771c4cf594240"
 
@@ -3331,11 +3335,6 @@ metafile = true
 [[files]]
 file = "mods/fast-paintings.pw.toml"
 hash = "8ee2d9483f330986edb9038d66f2b08c4dc408a45f02ee93c737e7b686ea83fe"
-metafile = true
-
-[[files]]
-file = "mods/faunaandorchestra.pw.toml"
-hash = "1fd409dc22fa58423705dc349b550bc8abcde0142ef1a3a7afd8851217b3b561"
 metafile = true
 
 [[files]]
