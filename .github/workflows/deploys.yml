@@ -45,6 +45,34 @@ jobs:
             echo "Haciendo git pull..."
             git pull origin main
 
+            /home/ubuntu/Server-Minecraft-Software/scripts/rcon.sh say EL SERVIDOR SE REINICIARA EN 1 MINUTO, RECOMENDADO SALIRSE.
+            sleep 20
+            /home/ubuntu/Server-Minecraft-Software/scripts/rcon.sh say EL SERVIDOR SE REINICIARA EN 40 SEGUNDOS, RECOMENDADO SALIRSE.
+            sleep 20
+            /home/ubuntu/Server-Minecraft-Software/scripts/rcon.sh say EL SERVIDOR SE REINICIARA EN 20 SEGUNDOS, RECOMENDADO SALIRSE.
+            sleep 10
+            /home/ubuntu/Server-Minecraft-Software/scripts/rcon.sh say EL SERVIDOR SE REINICIARA EN 10 SEGUNDOS, RECOMENDADO SALIRSE.
+            sleep 1
+            /home/ubuntu/Server-Minecraft-Software/scripts/rcon.sh say EL SERVIDOR SE REINICIARA EN 9 SEGUNDOS, RECOMENDADO SALIRSE.
+            sleep 1
+            /home/ubuntu/Server-Minecraft-Software/scripts/rcon.sh say EL SERVIDOR SE REINICIARA EN 8 SEGUNDOS, RECOMENDADO SALIRSE.
+            sleep 1
+            /home/ubuntu/Server-Minecraft-Software/scripts/rcon.sh say EL SERVIDOR SE REINICIARA EN 7 SEGUNDOS, RECOMENDADO SALIRSE.
+            sleep 1
+            /home/ubuntu/Server-Minecraft-Software/scripts/rcon.sh say EL SERVIDOR SE REINICIARA EN 6 SEGUNDOS, RECOMENDADO SALIRSE.
+            sleep 1
+            /home/ubuntu/Server-Minecraft-Software/scripts/rcon.sh say EL SERVIDOR SE REINICIARA EN 5 SEGUNDOS, RECOMENDADO SALIRSE.
+            sleep 1
+            /home/ubuntu/Server-Minecraft-Software/scripts/rcon.sh say EL SERVIDOR SE REINICIARA EN 4 SEGUNDOS, RECOMENDADO SALIRSE.
+            sleep 1
+            /home/ubuntu/Server-Minecraft-Software/scripts/rcon.sh say EL SERVIDOR SE REINICIARA EN 3 SEGUNDOS, RECOMENDADO SALIRSE.
+            sleep 1
+            /home/ubuntu/Server-Minecraft-Software/scripts/rcon.sh say EL SERVIDOR SE REINICIARA EN 2 SEGUNDOS, RECOMENDADO SALIRSE.
+            sleep 1
+            /home/ubuntu/Server-Minecraft-Software/scripts/rcon.sh say EL SERVIDOR SE REINICIARA EN 1 SEGUNDOS, RECOMENDADO SALIRSE.
+            sleep 1
+            /home/ubuntu/Server-Minecraft-Software/scripts/rcon.sh say REINICIANDO SERVIDOR, SALIRSE YA DE YA.
+            sleep 5
             echo "Deteniendo servidor..."
             ./scripts/stop_server.sh
 
