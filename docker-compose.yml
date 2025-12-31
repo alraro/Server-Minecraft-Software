@@ -1,5 +1,7 @@
 networks:
   minecraft-net:
+  proxy_net:
+    external: true
 
 services:
   minecraft:
@@ -52,11 +54,15 @@ services:
     image: prom/prometheus:latest
     container_name: prometheus
     restart: "on-failure"
-    ports:
-      - "9090:9090"
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
       - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+      - '--web.external-url=/prometheus/'  # <--- LA CLAVE ES ESTA LÍNEA
     networks:
       - minecraft-net
       - proxy_net
@@ -67,8 +73,9 @@ services:
     image: grafana/grafana-oss:latest
     container_name: grafana
     restart: "on-failure"
-    ports:
-      - "3000:3000" # Puerto para acceder a la UI de Grafana
+    environment:
+      - GF_SERVER_ROOT_URL=http://ocidashboard.duckdns.org/grafana/
+      - GF_SERVER_SERVE_FROM_SUB_PATH=true
     volumes:
       # Un volumen para que tus dashboards y configs sobrevivan
       - grafana-data:/var/lib/grafana
@@ -82,8 +89,6 @@ services:
   loki:
     image: grafana/loki:latest
     container_name: loki
-    ports:
-      - "3100:3100" # Puerto para recibir logs
     volumes:
       - loki-data:/loki
     networks:
@@ -109,7 +114,3 @@ volumes:
   prometheus-data:
   grafana-data:
   loki-data:
-
-networks:
-  proxy_net:
-    external: true
