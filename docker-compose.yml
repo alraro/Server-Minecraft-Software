@@ -38,6 +38,7 @@ services:
 
     networks:
       - minecraft-net
+      - proxy_net
 
     volumes:
       - ./minecraft-data:/data
@@ -58,6 +59,7 @@ services:
       - prometheus-data:/prometheus
     networks:
       - minecraft-net
+      - proxy_net
     depends_on:
       - minecraft
 
@@ -73,6 +75,7 @@ services:
     # --- AÑADIR A LA RED ---
     networks:
       - minecraft-net
+      - proxy_net
     depends_on:
       - prometheus
 
@@ -85,6 +88,7 @@ services:
       - loki-data:/loki
     networks:
       - minecraft-net
+      - proxy_net
     restart: unless-stopped
 
   promtail:
@@ -98,9 +102,14 @@ services:
     command: -config.file=/etc/promtail/config.yml
     networks:
       - minecraft-net
+      - proxy_net
     restart: unless-stopped
 
 volumes:
   prometheus-data:
   grafana-data:
   loki-data:
+
+networks:
+  proxy_net:
+    external: true
