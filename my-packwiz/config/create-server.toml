@@ -499,7 +499,7 @@
 	#The Maximum Distance to an active mirror for the symmetry wand to trigger.
 	# Default: 50
 	# Range: > 10
-	maxSymmetryWandRange = 50
+	maxSymmetryWandRange = 100
 	#.
 	#The Maximum Distance a Block placed by Create's placement assist will have to its interaction point.
 	# Default: 12
