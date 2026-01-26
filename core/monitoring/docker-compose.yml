@@ -1,5 +1,6 @@
 networks:
   minecraft-net:
+    external: true
   proxy_net:
     external: true
 
@@ -20,16 +21,15 @@ services:
     networks:
       - minecraft-net
       - proxy_net
-    depends_on:
-      - minecraft
 
   grafana:
     image: grafana/grafana-oss:latest
     container_name: grafana
     restart: "on-failure"
     environment:
-      - GF_SERVER_ROOT_URL=http://ocidashboard.duckdns.org/grafana/
-      - GF_SERVER_SERVE_FROM_SUB_PATH=true
+      - GF_SERVER_ROOT_URL=${GF_SERVER_ROOT_URL}
+      - GF_SERVER_SERVE_FROM_SUB_PATH=${GF_SERVER_SERVE_FROM_SUB_PATH}
+      - GF_SECURITY_ALLOW_EMBEDDING=${GF_SECURITY_ALLOW_EMBEDDING}
     volumes:
       # Un volumen para que tus dashboards y configs sobrevivan
       - grafana-data:/var/lib/grafana
@@ -37,8 +37,6 @@ services:
     networks:
       - minecraft-net
       - proxy_net
-    depends_on:
-      - prometheus
 
   loki:
     image: grafana/loki:latest
