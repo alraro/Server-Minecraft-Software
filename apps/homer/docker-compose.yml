@@ -1,0 +1,12 @@
+services:
+    homer:
+      image: b4bz/homer
+      container_name: homer
+      volumes:
+        - ./assets:/www/assets
+      networks:
+        - proxy_net
+
+networks:
+  proxy_net:
+    external: true

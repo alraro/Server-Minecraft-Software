@@ -1,0 +1,16 @@
+services:
+  wetty:
+    image: wettyoss/wetty
+    container_name: wetty
+    restart: always
+    environment:
+      - SSHHOST=172.17.0.1
+      - SSHPORT=22
+      - SSHUSER=ubuntu
+      - BASE=/
+    networks:
+      - proxy_net
+
+networks:
+  proxy_net:
+    external: true
