@@ -2,3 +2,4 @@ minecraft-data/
 server_pack/
 .env
 server-image/mods/
+mods_backup_*
