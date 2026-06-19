@@ -3031,6 +3031,11 @@ hash = "bc1932fdab0b79abe13f87a0cd561ad548fb716e0e6a51155286e65986f172f3"
 metafile = true
 
 [[files]]
+file = "mods/create-aeronautics.pw.toml"
+hash = "59beba57945e374108e22789e8fc32d2758174929ebd9bf17fc139956dc32e30"
+metafile = true
+
+[[files]]
 file = "mods/create-connected.pw.toml"
 hash = "ec5b7bace8effcfb88750f47deca2b2e063a4a9b33ed2e731b63658f07e6af7a"
 metafile = true
@@ -3047,7 +3052,7 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "462bf1560d05ef3b0573deb1a9024bd415ddd7471c7d5409825d12bbd0bfbcfc"
+hash = "4b0ca63279620ec9ba4c63820a9d4f9ceea9b717227137ea19e5c420c820f858"
 metafile = true
 
 [[files]]
@@ -3286,7 +3291,7 @@ metafile = true
 
 [[files]]
 file = "mods/fauna-and-orchestra.pw.toml"
-hash = "add4521454826895fbacd68a6e239af972c1643f9ccfcfacca91c92d09836625"
+hash = "aefd3d44845c7878d7dfd1816d86c534bbffae878ef70f7bad3023ad3be93424"
 metafile = true
 
 [[files]]
@@ -4090,13 +4095,13 @@ hash = "5c389ef3ee385a5ca54bd45dde9c4321f903ddc46c648027391033f20a5bff67"
 metafile = true
 
 [[files]]
-file = "mods/sawmill.pw.toml"
-hash = "4540fbd102e956e0c570dc8901099367ccb8c39923209413caef97a0f03274b1"
+file = "mods/sable.pw.toml"
+hash = "56c47f4f4732d86a144c8c86af80411238c3ea74f6b96b0bc5174d2f20073a98"
 metafile = true
 
 [[files]]
-file = "mods/scalablelux.pw.toml"
-hash = "030c615d6b35ec70f4fbe8cb782512deb05362378ab6ca838874b4490343bc7b"
+file = "mods/sawmill.pw.toml"
+hash = "4540fbd102e956e0c570dc8901099367ccb8c39923209413caef97a0f03274b1"
 metafile = true
 
 [[files]]

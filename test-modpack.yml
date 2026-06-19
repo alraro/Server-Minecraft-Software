@@ -1,0 +1,30 @@
+services:
+  minecraft:
+    image: alraro/software-modpack-fauna:2.1.0
+    tty: true
+    stdin_open: true
+    container_name: server-software-fauna-image-testing
+    restart: no
+    environment:
+      EULA: "TRUE"
+      TYPE: "NEOFORGE"
+      NEOFORGE_VERSION: "21.1.233"
+      VERSION: "1.21.1"
+      MEMORY: "6144M"
+      ALLOW_FLIGHT: "TRUE"
+      MAX_TICK_TIME: "300000"
+      DIFFICULTY: "hard"
+      MODE: "survival"
+      ONLINE_MODE: "FALSE"
+      ENABLE_COMMAND_BLOCK: "TRUE"
+      SPAWN_PROTECTION: "0"
+      PVP: "TRUE"
+      RCON_ENABLED: "TRUE"
+      RCON_PORT: "25575"
+      SERVER_NAME: "Servidor de Software"
+      LEVEL_TYPE: "minecraft:large_biomes"
+      MOTD: "    §a§l¡Server del Software! §f- §c[NeoForge 1.21.1]§r\n          §6§kaaaa§6 » §e§lFauna & Orchestra §6« §6§kaaaa"
+      ICON: "/icon/icon.png"
+      OVERRIDE_ICON: "TRUE"
+    ports:
+      - 25565:25565
