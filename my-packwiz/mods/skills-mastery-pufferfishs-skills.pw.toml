@@ -1,0 +1,13 @@
+name = "Skills Mastery [Pufferfish's Skills]"
+filename = "skills_mastery.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9a99801916489019fc8a2aad156d6159e3795f85"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6859175
+project-id = 1313813

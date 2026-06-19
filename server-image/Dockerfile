@@ -2,4 +2,4 @@ FROM itzg/minecraft-server:java21
 
 COPY ./mods /mods
 
-COPY icon.png icon.png
+COPY icon.png /icon/icon.png

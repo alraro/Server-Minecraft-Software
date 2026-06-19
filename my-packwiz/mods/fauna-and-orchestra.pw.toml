@@ -1,0 +1,13 @@
+name = "Fauna & Orchestra"
+filename = "faunaandorchestra-2.0.11.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b08c77fe1e5fd9b07ffc132a4357d5b8309be5d2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7401575
+project-id = 1289979

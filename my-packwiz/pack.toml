@@ -1,13 +1,13 @@
-name = "Sofware Fauna"
+name = "software-fauna"
 author = "alraro"
-version = "1.2.2"
+version = "2.0.5"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "abb6e227c43f3c71df4bda2554663c07f4c0de64bb5c5f0d30df256165ec90a0"
+hash = "112e72786cd5ce34badf30f5ba7f339acc7918d3166d504a7bd686323f63110f"
 
 [versions]
 minecraft = "1.21.1"
-neoforge = "21.1.211"
+neoforge = "21.1.233"
