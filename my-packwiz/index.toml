@@ -2702,7 +2702,7 @@ metafile = true
 
 [[files]]
 file = "mods/adorabuild-structures.pw.toml"
-hash = "42cfdf60039cb971b6c13d8fa25029cb75aea3af8bc54b873b0d9608877c1084"
+hash = "645d62622dc3aa067a87b61d42aa4ebe6d6bb68f5b25f202192e2f73cc88df03"
 metafile = true
 
 [[files]]
@@ -2772,7 +2772,7 @@ metafile = true
 
 [[files]]
 file = "mods/aquaculture-delight.pw.toml"
-hash = "918cbc479cfc5c66ee234bc3f71ee584c1ab596f0d88aaa59bf66ca3b404c5db"
+hash = "aa3a2b60567657cf093c5ec9d384df99c8ba94f7907305c18d8f50c784957a90"
 metafile = true
 
 [[files]]
@@ -2827,7 +2827,7 @@ metafile = true
 
 [[files]]
 file = "mods/bedrockoid.pw.toml"
-hash = "4c3dfa10f240cb079e6dadf79225e1fcaab261dbd1b18b004c5bcf52dfd8e8a6"
+hash = "682966bb496bbde35df842d186b4e452e7ed300593aa02163d5d3ce0e4669499"
 metafile = true
 
 [[files]]
@@ -2846,6 +2846,11 @@ hash = "ba6300f8b73556615470c389c84dd3a594ffc9d435ffdbfa4288351f27017139"
 metafile = true
 
 [[files]]
+file = "mods/better-world-loading.pw.toml"
+hash = "099a7b7bab4d61719a671644a4bfd0a4ef146483eac306479b1ffb177669ad5d"
+metafile = true
+
+[[files]]
 file = "mods/biome-music.pw.toml"
 hash = "d7d497a6c1f81a4f6660f5e17cba8a8a31313479c0b08e964d19e8f71729ad37"
 metafile = true
@@ -2857,7 +2862,7 @@ metafile = true
 
 [[files]]
 file = "mods/blended-compat.pw.toml"
-hash = "8e1f17dcb40352d1604d521736734f40b10b58629cd063af5b244831ac28039a"
+hash = "e7db83e93d7e46dbfd509e94290e0e06b5552f91463a0c6b37b027d9f9e7b075"
 metafile = true
 
 [[files]]
@@ -3032,7 +3037,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-aeronautics.pw.toml"
-hash = "59beba57945e374108e22789e8fc32d2758174929ebd9bf17fc139956dc32e30"
+hash = "5fab8d2e412683dfd72f08cf6750e51b03cb43192e8eb783e962ba28d20978bc"
 metafile = true
 
 [[files]]
@@ -3052,7 +3057,7 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "4b0ca63279620ec9ba4c63820a9d4f9ceea9b717227137ea19e5c420c820f858"
+hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
 metafile = true
 
 [[files]]
@@ -3172,6 +3177,11 @@ metafile = true
 [[files]]
 file = "mods/dungeon-and-taverns.pw.toml"
 hash = "042ff6bd1253a58e93d7ee172a2d565b0c8dedb1b88d0cb5ff7d2c9e73a04141"
+metafile = true
+
+[[files]]
+file = "mods/dungeons-and-taverns-woodland-mansion-overhaul.pw.toml"
+hash = "7be67fc02758063ad89a6e0dba7451a3347d7ddd7e657263e8a7dd98d289613f"
 metafile = true
 
 [[files]]
@@ -3421,7 +3431,7 @@ metafile = true
 
 [[files]]
 file = "mods/hexerei.pw.toml"
-hash = "0ec6dad41e0e0619a06158ebc08109caa64812673e918ae8999a8946500588c1"
+hash = "bd496127dfae8939188c1eb6d6e77930a2f89514308169abed5d27a7b3199ac2"
 metafile = true
 
 [[files]]
@@ -3746,7 +3756,7 @@ metafile = true
 
 [[files]]
 file = "mods/midnightlib.pw.toml"
-hash = "93075fbdb70fece2e725f34f4b4c58f9fce73d3d81c93ce2b546c939b42af6f5"
+hash = "73aba17132f267dd76ff682aa84abfb7c09d25a93b9220ee261a1e25337bebc7"
 metafile = true
 
 [[files]]
@@ -4091,7 +4101,7 @@ metafile = true
 
 [[files]]
 file = "mods/sable.pw.toml"
-hash = "56c47f4f4732d86a144c8c86af80411238c3ea74f6b96b0bc5174d2f20073a98"
+hash = "674aaf0dc67f808f0054cfc7bbe041d6725fcbbe97644a85ffbd946a22d35666"
 metafile = true
 
 [[files]]

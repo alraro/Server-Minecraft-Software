@@ -1,6 +1,6 @@
 services:
   minecraft:
-    image: alraro/software-modpack-fauna:2.1.0
+    image: itzg/minecraft-server
     tty: true
     stdin_open: true
     container_name: server-software-fauna-image-testing
@@ -26,5 +26,8 @@ services:
       MOTD: "    §a§l¡Server del Software! §f- §c[NeoForge 1.21.1]§r\n          §6§kaaaa§6 » §e§lFauna & Orchestra §6« §6§kaaaa"
       ICON: "/icon/icon.png"
       OVERRIDE_ICON: "TRUE"
+      PACKWIZ_URL: "/packwiz/pack.toml"
+    volumes:
+      - ./my-packwiz:/packwiz
     ports:
       - 25565:25565

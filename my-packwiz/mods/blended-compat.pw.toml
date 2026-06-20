@@ -3,11 +3,11 @@ filename = "blended-compat-1.1.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "98bbd93ec132f00cd70d6b65f4002bfda3b8d433"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/QENxoXyf/versions/H9O3FEbB/blended-compat-1.1.2.jar"
+hash-format = "sha512"
+hash = "3f26c0a0c6da93c712b0c8b1d9381e6193029233c1abadb9e0eb393fb200149ae34f4eff8a286b64d1e19738c5b063c2ade91ae7b8167fce05fa9fd1016dcfd1"
 
 [update]
-[update.curseforge]
-file-id = 6915988
-project-id = 1066390
+[update.modrinth]
+mod-id = "QENxoXyf"
+version = "H9O3FEbB"
