@@ -3036,11 +3036,6 @@ hash = "bc1932fdab0b79abe13f87a0cd561ad548fb716e0e6a51155286e65986f172f3"
 metafile = true
 
 [[files]]
-file = "mods/create-aeronautics.pw.toml"
-hash = "5fab8d2e412683dfd72f08cf6750e51b03cb43192e8eb783e962ba28d20978bc"
-metafile = true
-
-[[files]]
 file = "mods/create-connected.pw.toml"
 hash = "ec5b7bace8effcfb88750f47deca2b2e063a4a9b33ed2e731b63658f07e6af7a"
 metafile = true
@@ -4097,11 +4092,6 @@ metafile = true
 [[files]]
 file = "mods/rustic-engineer.pw.toml"
 hash = "5c389ef3ee385a5ca54bd45dde9c4321f903ddc46c648027391033f20a5bff67"
-metafile = true
-
-[[files]]
-file = "mods/sable.pw.toml"
-hash = "674aaf0dc67f808f0054cfc7bbe041d6725fcbbe97644a85ffbd946a22d35666"
 metafile = true
 
 [[files]]
